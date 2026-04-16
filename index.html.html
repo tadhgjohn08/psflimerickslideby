@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedigo Submission Fighting | Limerick</title>
+
+  <style>
+    body { margin:0; font-family:Arial; background:#0b0b0b; color:white; }
+    header { text-align:center; padding:40px 15px; border-bottom:3px solid red; }
+    header h1 { color:red; font-size:28px; margin:0; }
+    header p { color:#ccc; margin:8px 0; font-size:14px; }
+    .btn { display:inline-block; margin-top:15px; padding:10px 20px; background:red; color:white; text-decoration:none; border-radius:8px; font-weight:bold; }
+
+    nav { text-align:center; padding:10px; background:#111; }
+    nav a { color:white; margin:0 10px; text-decoration:none; font-size:14px; }
+
+    section { padding:30px 15px; max-width:900px; margin:auto; }
+    h2 { color:red; margin-bottom:15px; font-size:22px; }
+    .about { line-height:1.6; color:#ddd; font-size:15px; }
+
+    .schedule-img { width:100%; border-radius:10px; border:2px solid #222; }
+
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; }
+    .gallery img, .gallery video { width:100%; border-radius:8px; }
+
+    .pricing { background:#111; padding:20px; border-radius:10px; text-align:center; }
+    .price { font-size:28px; color:red; margin:10px 0; }
+
+    .contact { background:#111; padding:20px; border-radius:10px; }
+    input, textarea { width:100%; padding:10px; margin-top:10px; border-radius:6px; border:none; }
+    button { margin-top:15px; padding:10px; background:red; color:white; border:none; border-radius:6px; font-weight:bold; width:100%; }
+
+    iframe { width:100%; border:none; }
+
+    footer { text-align:center; padding:15px; border-top:2px solid red; color:#888; font-size:12px; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Pedigo Submission Fighting</h1>
+  <p>The Limerick Slideby</p>
+  <p>Limerick City, Ireland</p>
+  <a href="#contact" class="btn">Start Your Free Trial</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="about">
+    Established in 2024, Pedigo Submission Fighting Limerick — The Limerick Slideby — has rapidly become one of the most successful grappling teams in Ireland.
+
+    Led by head coach Shane Sweeney, the team is an official extension of Pedigo Submission Fighting HQ in Mount Vernon, Illinois.
+
+    In a short time, the team has won numerous competition team trophies across the country — more than any other team from Limerick — establishing itself as a dominant force in Irish grappling.
+
+    We specialise in No-Gi Jiu Jitsu, wrestling, and competition-focused training in a high-performance environment.
+  </p>
+</section>
+
+<section id="schedule">
+  <h2>Class Schedule</h2>
+  <img src="schedule.jpg" class="schedule-img" />
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <video controls src="video1.mp4"></video>
+  </div>
+</section>
+
+<section>
+  <h2>Latest on Instagram</h2>
+
+  <feedembed-widget feed-id="YOUR-ID"></feedembed-widget>
+
+  <script>
+    (() => {
+      const d = document;
+      const s = d.createElement("script");
+      s.type = "module";
+      s.src = "https://wgt.feedembed.io/widget.js";
+      d.head.append(s);
+    })();
+  </script>
+
+</section>
+<section id="pricing">
+  <h2>Membership</h2>
+  <div class="pricing">
+    <p>Unlimited Classes</p>
+    <div class="price">€80 / month</div>
+    <p>No contracts. Train as much as you want.</p>
+    <a href="#contact" class="btn">Join Now</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Start Your Free Trial</h2>
+  <div class="contact">
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Pedigo Submission Fighting Limerick</p>
+</footer>
+
+</body>
+</html>
